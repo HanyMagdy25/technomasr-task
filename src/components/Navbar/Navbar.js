@@ -10,8 +10,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 // import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { BsFillCartPlusFill } from "react-icons/bs";
 import { GlobalContext } from "../../context/GlobalContext";
-// Import Images
-// import logo from "../../assets/logo.png";
+
 
 const Navbar = () => {
   const [click, setClick] = useState(false);

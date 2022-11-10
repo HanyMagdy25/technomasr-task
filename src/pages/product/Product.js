@@ -2,43 +2,29 @@ import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 // import CardLg from "../../components/BestProducts/CardLg";
 import { products } from "../../utils/data";
-import { AiFillHeart, AiOutlinePlus } from "react-icons/ai";
+import { AiOutlinePlus } from "react-icons/ai";
 import { BsDash } from "react-icons/bs";
 
 import "./Product.css";
 import { GlobalContext } from "../../context/GlobalContext";
 const Product = () => {
   const [count, setCount] = useState(1);
-  // console.log(selet)
+
   const param = useParams();
   const oneProduct = products.find((a) => a.id === param.id);
-    console.log(oneProduct);
-  const {
-    addProductToFavourite,
-    removeProductFromFavourite,
-    addProductToCart,
-    removeProductFromCart,
-    cart,
-    favourite,
-  } = useContext(GlobalContext);
 
-//   let storedFavourite = favourite.find((o) => o.id === oneProduct.id);
-//   const allStoredFavourite = storedFavourite ? true : false;
+  const { addProductToCart, removeProductFromCart, cart } =
+    useContext(GlobalContext);
+
   let storedCart = cart.find((o) => o.id === oneProduct.id);
   const allStoredCart = storedCart ? true : false;
-  // console.log("3232", allStoredFavourite);
-  // const { removeProductFromFavourite,addProductToFavourite } = useContext(GlobalContext);
-
   return (
     <div className="product-section">
       <div className="product-section-container">
         <div className="section-container-top">
           <div className="product-img">
             <div className="one-image-big">
-              <img
-                src={oneProduct?.image}
-                alt={oneProduct.title}
-              />
+              <img src={oneProduct?.image} alt={oneProduct.title} />
             </div>
           </div>
           <div className="product-details">
@@ -69,7 +55,7 @@ const Product = () => {
                     <BsDash />
                   </button>
                 </div>
-                
+
                 {allStoredCart ? (
                   <button
                     // onClick={() => addProductToCart(oneProduct)}
@@ -86,7 +72,6 @@ const Product = () => {
                     إضافة للسلة
                   </button>
                 )}
-                
               </div>
             </div>
           </div>

@@ -6,16 +6,16 @@ import CardOfCart from "../../components/CardOfCart/CardOfCart";
 
 const Cart = () => {
   const [total, setTotal] = useState(null);
-  const [cartLocal, setCartLocal] = useState([]);
+  // const [cartLocal, setCartLocal] = useState([]);
   const { cart } = useContext(GlobalContext);
-  console.log("cart", cart);
-  console.log("cartLocal", cartLocal);
+  // console.log("cart", cart);
+  // console.log("cartLocal", cartLocal);
   useEffect(() => {
-    setCartLocal(
-      localStorage.getItem("cart-of-techno")
-        ? JSON.parse(localStorage.getItem("cart-of-techno"))
-        : []
-    );
+    // setCartLocal(
+    //   localStorage.getItem("cart-of-techno")
+    //     ? JSON.parse(localStorage.getItem("cart-of-techno"))
+    //     : []
+    // );
     setTotal(
       cart.reduce((acc, curr) => acc + Number(curr.price) * curr.qty, 0)
     );
@@ -69,7 +69,6 @@ const Cart = () => {
           </div>
         ) : (
           <div className="favourite-empty">
-            {/* <img src={emptyFav} alt="empty" /> */}
             <h3>السلة فارغة</h3>
             <Link to="/">قم بالتسوق لإضافة منتجات</Link>
           </div>

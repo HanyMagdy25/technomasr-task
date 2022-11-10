@@ -8,7 +8,6 @@ import { products } from "../../utils/data";
 import "./Home.css";
 
 const Home = () => {
-  const [pageNumber, setPageNumber] = useState(0);
   const [category, setCategory] = useState([]);
   useEffect(() => {
     setCategory(products);
@@ -19,16 +18,6 @@ const Home = () => {
       return curData.cats.includes(cartItem);
     });
     setCategory(result);
-  };
-
-  const usersPerPage = 9;
-  const pagesVisited = pageNumber * usersPerPage;
-
-  const pageCount = Math.ceil(category.length / usersPerPage);
-
-  const changePage = ({ selected }) => {
-    setPageNumber(selected);
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -43,18 +32,15 @@ const Home = () => {
               </div>
             </div>
           ) : (
-            category
-              .slice(pagesVisited, pagesVisited + usersPerPage)
-              .map((card, index) => (
-                  <Card
-                    key={index}
-                    item={card}
-                    inArt={true}
-                    type="three"
-                    path="article-inside"
-                  />
-             
-              ))
+            category.map((card, index) => (
+              <Card
+                key={index}
+                item={card}
+                inArt={true}
+                type="three"
+                path="article-inside"
+              />
+            ))
           )}
         </div>
         {/* ====== Left Side ======= */}
@@ -69,7 +55,7 @@ const Home = () => {
                 // checked={category.length === products.length}
                 onChange={() => setCategory(products)}
               />
-               كل المنتجات
+              كل المنتجات
             </label>
             <label className="form-control">
               <input
