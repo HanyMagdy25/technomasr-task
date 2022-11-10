@@ -1,0 +1,65 @@
+.products-parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  align-items: center;
+  margin-bottom: 30px;
+  min-height: calc(100vh - 90px - 190px);
+}
+.products-parent-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+.products-div {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2%;
+}
+.categories {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+.categories-container {
+  width: 85%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  height: fit-content;
+  box-shadow: 1px 1px 15px -10px rgba(0, 0, 0, 0.705);
+  /* border-radius: 5px; */
+  border-radius: 0.413rem;
+}
+.categories-container .categories-head-title {
+  font-size: 23px;
+  font-weight: 200;
+  color: var(--black);
+}
+.categories-container h3:hover {
+  color: var(--first-color);
+}
+.categories label {
+  margin: 10px 0;
+  display: flex;
+}
+
+.categories label input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  margin: 2px 0 2px 5px;
+  accent-color: var(--first-color);
+}
+.choose-cat {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.choose-cat h2 {
+  font-family: "Amariya-Bold";
+}
