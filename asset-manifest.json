@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/technomasr-task/static/css/main.3b0b1c04.css",
-    "main.js": "/technomasr-task/static/js/main.c813017a.js",
+    "main.css": "/technomasr-task/static/css/main.b413ccea.css",
+    "main.js": "/technomasr-task/static/js/main.cbcc1ae8.js",
     "index.html": "/technomasr-task/index.html",
-    "main.3b0b1c04.css.map": "/technomasr-task/static/css/main.3b0b1c04.css.map",
-    "main.c813017a.js.map": "/technomasr-task/static/js/main.c813017a.js.map"
+    "main.b413ccea.css.map": "/technomasr-task/static/css/main.b413ccea.css.map",
+    "main.cbcc1ae8.js.map": "/technomasr-task/static/js/main.cbcc1ae8.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b0b1c04.css",
-    "static/js/main.c813017a.js"
+    "static/css/main.b413ccea.css",
+    "static/js/main.cbcc1ae8.js"
   ]
 }
