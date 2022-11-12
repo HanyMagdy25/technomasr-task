@@ -47,14 +47,9 @@
 .nav-links:hover {
   transform: scale(1.05);
 }
-/* .active {
-  color: #ffff;
-} */
 .menu-icon {
   display: none;
 }
-
-/* btn-login-div */
 .btn-login-div span {
   margin-left: 15px;
   color: var(--color-purple);
@@ -74,7 +69,14 @@
   color: var(--color-white);
 }
 /* ======== media ======= */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 990px) {
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -111,26 +113,27 @@
   .logo-container {
     width: 100px;
   }
+  .btn-login-div {
+    position: absolute;
+    left: 60px;
+  }
   .navbar-logo {
     position: absolute;
-    top: 12px;
+    top: 20px;
     right: 20px;
   }
   .menu-icon {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 20px;
-    /* transform: translate(-100%, 60%); */
     font-size: 1.8rem;
     cursor: pointer;
-    color: var(--color-white);
+    color: var(--color-purple);
   }
   .form-control {
     display: flex;
-    justify-content: center;
     text-align: center;
-    /* background-color: violet; */
     width: 90%;
     margin-top: 20px;
   }
@@ -138,10 +141,6 @@
     display: flex;
     width: 300px;
   }
-}
-
-/* ======== Tablet ======== */
-@media screen and (max-width: 1000px) {
   .payment-section-container {
     padding: 55px;
   }

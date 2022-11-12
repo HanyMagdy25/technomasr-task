@@ -37,7 +37,7 @@ const CardOfCart = ({ item }) => {
               </button>
             </div>
           </div>
-          <div className="cart-bootom-price"><h3>{item.price * count} ريال</h3></div>
+          <div className="cart-bootom-price"><h3>{item.price * count} جنيه</h3></div>
         </div>
       </div>
     </div>

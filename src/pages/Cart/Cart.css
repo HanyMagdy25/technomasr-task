@@ -43,11 +43,10 @@
   font-weight: 600;
 }
 .cards-in-cart .left-cart-top > h3 {
-  /* background-color: #d8ffde; */
-  font-family: "AraJozoor-Regular";
   color: var(--color-best-text);
   font-size: 23px;
   font-weight: 500;
+  margin: 6px 0;
 }
 .cards-in-cart .left-cart-top div {
   display: flex;
@@ -57,7 +56,7 @@
 }
 .cards-in-cart .left-cart-top input {
   background-color: var(--color-white);
-  border: 1px solid black;
+  border: 1px solid #767676;
   border-radius: 6px;
   color: #8a8a8a;
   outline: none;

@@ -45,19 +45,19 @@ const Cart = () => {
               <div className="left-cart-bottom">
                 <div>
                   <h3>إجمالي الطلب</h3>
-                  <h3>{total} ريال</h3>
+                  <h3>{total} جنيه</h3>
                 </div>
                 <div>
                   <h3>الشحن</h3>
-                  <h3>123 ريال</h3>
+                  <h3>15 جنيه</h3>
                 </div>
                 <div>
                   <h3>الضريبة</h3>
-                  <h3>123 ريال</h3>
+                  <h3>12 جنيه</h3>
                 </div>
                 <div>
                   <h3>الخصم</h3>
-                  <h3>123 ريال</h3>
+                  <h3>5 جنيه</h3>
                 </div>
                 <div className="last">
                   <Link to="/" className="btn-green flex-center">

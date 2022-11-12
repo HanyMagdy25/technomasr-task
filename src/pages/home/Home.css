@@ -63,3 +63,31 @@
 .choose-cat h2 {
   font-family: "Amariya-Bold";
 }
+@media screen and (max-width: 990px) {
+  .products-parent-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .products-div {
+    width: 100%;
+    padding: 20px;
+  }
+  .categories {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  .categories-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    height: -moz-fit-content;
+    height: fit-content;
+    box-shadow: 1px 1px 15px -10px rgb(0 0 0 / 71%);
+    /* border-radius: 5px; */
+    border-radius: 0.413rem;
+  }
+}
