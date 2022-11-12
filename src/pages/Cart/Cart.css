@@ -72,6 +72,7 @@
   padding: 0 8px;
   font-size: 16px;
   width: 28%;
+  border: none;
 }
 .cards-in-cart .left-cart-bottom {
   background-color: var(--color-white);
@@ -96,7 +97,8 @@
   outline: none;
   padding: 12px 12px;
   font-size: 16px;
-  width: 28%;
+  width: 48%;
+  border: none;
 }
 
 @media screen and (max-width: 800px) {

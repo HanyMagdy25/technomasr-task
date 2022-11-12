@@ -33,9 +33,7 @@
   min-width: 104px;
   object-fit: cover;
 }
-
 .CardOfCart-details {
-  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -43,17 +41,14 @@
   padding: 4px 15px;
 }
 .CardOfCart-top {
-  /* background-color: cornflowerblue; */
   display: flex;
 }
 .CardOfCart-top > h3 {
-  /* background-color: cornflowerblue; */
-
+  padding-left: 20px;
   color: var(--color-best-text);
   font-size: 20px;
 }
 .CardOfCart-top > span {
-  /* background-color: cornflowerblue; */
   display: flex;
   align-items: flex-end;
   color: #8a8a8a;
